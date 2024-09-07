@@ -25,7 +25,7 @@ To run the client, you will need to create the .env file in the root directory a
 Clone the project
 
 ```bash
-  git clone aaa
+  git clone https://github.com/HarDep/clie-dist-citas.git
 ```
 
 Install dependencies
