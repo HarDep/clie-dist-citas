@@ -1,27 +1,43 @@
-# MedicalClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+# Medical consultations client
 
-## Development server
+A client that conect with a server to store, create, update and consult medical consultations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Authors
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [@Harold-Alvarado](https://github.com/HarDep)
+- [@Sebastian-Mejia](https://github.com/Sebasmejia123)
+- [@Luis-Rodriguez](https://github.com/luismiguel44)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Environment Variables
 
-## Running unit tests
+To run the client, you will need to create the .env file in the root directory and add the following environment variables to your .env file
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`SERVER_PORT`
 
-## Running end-to-end tests
+`SERVER_HOST`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Run Locally
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Clone the project
+
+```bash
+  git clone aaa
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the client
+
+```bash
+  npm run start
+```
+
+Now must make sure that the server is running. Then you can enter the address http://localhost:4200 in a browser to test the project
