@@ -35,9 +35,7 @@ export class ConsultationsService {
     return this.httpClient.post<PostResponse>(`${this.url}?cc=${cc}&date=${consultationDate}`, formData);
   }
 
-  getAuthorizationImage(consultationCode: string): Observable<Blob> {
-    //let a = this.httpClient.get<Blob>(`${this.url}/authorizations/${consultationCode}`);
-    //a.subscribe(data => console.log(data.))
-    return this.httpClient.get<Blob>(`${this.url}/authorizations/${consultationCode}`);
+  getAuthorizationImage(consultationCode: string): string{
+    return `${this.url}/authorizations/${consultationCode}`
   }
 }
