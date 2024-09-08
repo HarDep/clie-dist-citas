@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConsultationsService } from '../consultations.service';
 
 @Component({
   selector: 'app-see-consultations',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './see-consultations.component.css'
 })
 export class SeeConsultationsComponent {
+
+  constructor(private consultationsService: ConsultationsService) { }
 
 }

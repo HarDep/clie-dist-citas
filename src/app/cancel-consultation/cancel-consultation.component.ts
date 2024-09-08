@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConsultationsService } from '../consultations.service';
 
 @Component({
   selector: 'app-cancel-consultation',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './cancel-consultation.component.css'
 })
 export class CancelConsultationComponent {
+
+  constructor(private consultationsService: ConsultationsService) { }
 
 }
