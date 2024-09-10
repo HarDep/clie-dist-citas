@@ -80,6 +80,8 @@ server {
         server_name medical-client;
 
         location / {
+        		    add_header Cache-Control "max-age=0, no-cache, no-store, must-revalidate";
+				        add_header Pragma "no-cache";
                 try_files $uri $uri/ =404;
         }
 
