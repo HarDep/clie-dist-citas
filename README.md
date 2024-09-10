@@ -111,4 +111,6 @@ Now you have to restart Nginx with the following command.
 ```bash
   sudo systemctl restart nginx
 ```
-That's all, now you can access to the project in a browser using the url http://medical-client.
+That's all, now you can access to the project in a browser using the url http://medical-client. You will see somthing like this.
+
+![nginx](./public/nginx-server.jpeg)
