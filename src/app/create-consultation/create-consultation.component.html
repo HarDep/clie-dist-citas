@@ -1,1 +1,40 @@
-<p>create-consultation works!</p>
+<div class="container mt-4"></div>
+  <h2>Crear Cita</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="cc">Código de Consulta:</label>
+      <input
+        type="text"
+        id="cc"
+        class="form-control"
+        [(ngModel)]="consultation.cc"
+        name="cc"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="appointmentDate">Fecha de la Cita:</label>
+      <input
+        type="datetime-local"
+        id="appointmentDate"
+        class="form-control"
+        [(ngModel)]="consultation.appointmentDate"
+        name="appointmentDate"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="authorizationFile">Archivo de Autorización:</label>
+      <input
+        type="file"
+        id="authorizationFile"
+        class="form-control-file"
+        (change)="onFileSelect($event)"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear Cita</button>
+  </form>

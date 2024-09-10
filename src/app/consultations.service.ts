@@ -28,7 +28,7 @@ export class ConsultationsService {
   }
 
   cancelConsultation(consultationCode: string): Observable<Consultation> {
-    return this.httpClient.patch<Consultation>(`${this.url}/${consultationCode}`, null);
+    return this.httpClient.patch<Consultation>(`${this.url}/${consultationCode}`, consultationCode);
   }
 
   createConsultation(cc: string, consultationDate: string, formData: FormData): Observable<PostResponse> {
