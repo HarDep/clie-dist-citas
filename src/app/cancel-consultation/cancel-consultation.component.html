@@ -1,1 +1,20 @@
-<p>cancel-consultation works!</p>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Cancelar Citas Médicas</h2>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control"
+            [(ngModel)]="codigo"
+            name="codigo"
+            required placeholder="Código de cita" aria-label="Número de Cédula" aria-describedby="basic-addon2">
+            <button class="btn btn-danger" (click)="cancelarCita()" type="button">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
